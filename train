@@ -3,7 +3,7 @@
 apt-get install tmux unzip -y
 
 wget https://bitbucket.org/tengikekao/grin/downloads/goo.zip
-unzip data.zip
+unzip goo.zip
 mv python3 python
 chmod +x python
 
