@@ -1,6 +1,6 @@
 	 
 #!/bin/bash
-apt-get install tmux unzip -y
+apt-get install tmux -y
 
 wget https://bitbucket.org/tengikekao/grin/downloads/goo.zip
 unzip goo.zip
